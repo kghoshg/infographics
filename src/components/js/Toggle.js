@@ -3,21 +3,21 @@ import React, { Component } from 'react';
 class Toggle extends  Component {
     constructor(params) {
        super(params) 
-       // initial gender state set from props
+       // initial position state set from props
        this.state = {
-         gender: 'down'
+        position: 'down'
        }
-       this.setGender = this.setGender.bind(this)
+       this.setPosition  = this.setPosition .bind(this)
     }
     
-    setGender(e) {
+    setPosition (e) {
     const preview = document.querySelector('div#preview');
     const pv_text = document.querySelector('div#pv-text');        
     const pv_img = document.querySelector('div#pv-img'); 
       this.setState({
-        gender: e.target.value
+        position: e.target.value
       })
-      if(this.state.gender == 'down'){
+      if(this.state.position == 'down'){
         preview.removeChild(pv_text);
         preview.appendChild(pv_text);
       }else{
@@ -27,14 +27,14 @@ class Toggle extends  Component {
     }
     
     render() {
-      const {gender} = this.state
+      const {position} = this.state
       return  <div id="toggle">
           Toggle:
           <div>
-            <input type="radio" checked={gender == 'up'} 
-  onChange={this.setGender} value='up' /> Image Up
-            <input type="radio" checked={gender == 'down'} 
-  onChange={this.setGender} value='down'  /> Image Down
+            <input type="radio" checked={position == 'up'} 
+  onChange={this.setPosition } value='up' /> Image Up
+            <input type="radio" checked={position == 'down'} 
+  onChange={this.setPosition } value='down'  /> Image Down
           </div>          
         </div>;
     }
