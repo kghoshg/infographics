@@ -1,0 +1,14 @@
+#pv-text span {
+    display: none;
+    padding: .65em;
+    margin: 2%;
+    font-size: 1.25em;
+    font-weight: 700;
+    line-height: 1;
+    color: #fff;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: baseline;
+    border-radius: .25rem;
+    background-color: #0d6efd!important;
+}

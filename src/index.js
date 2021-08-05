@@ -1,14 +1,19 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
+import Texts from './components/js/Texts';
+import Images from './components/js/Images';
+import Toggle from './components/js/Toggle';
 import reportWebVitals from './reportWebVitals';
+import 'bootstrap/dist/css/bootstrap.css';
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <Texts />
+    <Images/>
+    <Toggle gender="male" />
   </React.StrictMode>,
-  document.getElementById('root')
+  document.getElementById('infographics')
 );
 
 // If you want to start measuring performance in your app, pass a function
