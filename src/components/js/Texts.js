@@ -18,7 +18,7 @@ class Texts extends Component {
   render() {
     return (
       <div>
-          <span>Enter text</span>
+          <span id="et">Enter text</span>
         	<input type="text" onChange={(e) => this.getName(e)}/>        
       </div>
     );
